@@ -1630,6 +1630,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kurkle/color@npm:^0.1.6":
+  version: 0.1.9
+  resolution: "@kurkle/color@npm:0.1.9"
+  checksum: 3/ac6bf44d6d1a1d549867b59ac1779e6593ff16459d9021bfb2c9b3d3ee51ef613465ea9e84630aecbb145a54661e26bb62102f6f665e08ceb43e2888212c531e
+  languageName: node
+  linkType: hard
+
 "@mapbox/geojson-rewind@npm:^0.5.0":
   version: 0.5.0
   resolution: "@mapbox/geojson-rewind@npm:0.5.0"
@@ -2413,6 +2420,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"acorn@npm:^7.2.0":
+  version: 7.3.1
+  resolution: "acorn@npm:7.3.1"
+  bin:
+    acorn: bin/acorn
+  checksum: 3/3fa70393843c3fd4af691f449563e983e064c5c3f655fd943f5f77fb767257623f8afc0a2454b0037aa0c4dd95374c75a9e0e6c54a5f497fc63e63449ad6327c
+  languageName: node
+  linkType: hard
+
 "address@npm:1.1.2, address@npm:^1.0.1":
   version: 1.1.2
   resolution: "address@npm:1.1.2"
@@ -2480,7 +2496,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-colors@npm:^3.0.0":
+"ansi-colors@npm:^3.0.0, ansi-colors@npm:^3.2.1":
   version: 3.2.4
   resolution: "ansi-colors@npm:3.2.4"
   checksum: 3/86ec4a476ae8661237c0da58c0b4c48ea57719fdd80eed00132db09ee88d69f5caa5889e13ccd07489e710bf3b9fd85123729e0660384d4373e92ef6125c1fad
@@ -3649,32 +3665,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chart.js@npm:^2.9.3":
-  version: 2.9.3
-  resolution: "chart.js@npm:2.9.3"
+"chart.js@npm:^3.0.0-alpha":
+  version: 3.0.0-alpha
+  resolution: "chart.js@npm:3.0.0-alpha"
   dependencies:
-    chartjs-color: ^2.1.0
-    moment: ^2.10.2
-  checksum: 3/8e3f10e003941c1c77a5209cd08ed342a41c7c6a2ed93722b7ea1366c804bb2349d957e066f2abb7a3399d6ebebe83a298a15cbc960bc64846bc127e94f77f27
-  languageName: node
-  linkType: hard
-
-"chartjs-color-string@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "chartjs-color-string@npm:0.6.0"
-  dependencies:
-    color-name: ^1.0.0
-  checksum: 3/29f7ef3ebf5af1a76034da3148e1f230eee0c0f6df497ab7072ce5fb9c11ff37f5f030d2a2a5f1fd9230895d9aa294b455c5dd0f0e04f38688c69d0ccbdca7dd
-  languageName: node
-  linkType: hard
-
-"chartjs-color@npm:^2.1.0":
-  version: 2.4.1
-  resolution: "chartjs-color@npm:2.4.1"
-  dependencies:
-    chartjs-color-string: ^0.6.0
-    color-convert: ^1.9.3
-  checksum: 3/850408dfcda057ef0115018d5c83b88f5539cf93bbae8389bd3c5caa405a18e1f1d89b22a26107e1559248206a4ad6243294a820d50f042c6782a1d9d09fb3de
+    "@kurkle/color": ^0.1.6
+  checksum: 3/7911eead948d612a8783434aaccde9ea8eb001498147eb48a94f577e666163a32f62877277a89c98a7e61ecc15078668e95c9d54fbbacdb4123725f1501eb2a7
   languageName: node
   linkType: hard
 
@@ -3885,7 +3881,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-convert@npm:^1.9.0, color-convert@npm:^1.9.1, color-convert@npm:^1.9.3":
+"color-convert@npm:^1.9.0, color-convert@npm:^1.9.1":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
   dependencies:
@@ -5165,6 +5161,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"enquirer@npm:^2.3.5":
+  version: 2.3.5
+  resolution: "enquirer@npm:2.3.5"
+  dependencies:
+    ansi-colors: ^3.2.1
+  checksum: 3/1745db4e9d40624abe89301ada7ab79771a8e8ad500d27e6d01b811ca43095b894b9c2b1cb82a4d441a338c5ad19e03cdf31c8a5a573f14013feaecc2c2f1073
+  languageName: node
+  linkType: hard
+
 "entities@npm:^1.1.1":
   version: 1.1.2
   resolution: "entities@npm:1.1.2"
@@ -5374,14 +5379,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-flowtype@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "eslint-plugin-flowtype@npm:4.7.0"
+"eslint-plugin-flowtype@npm:^5.1.3":
+  version: 5.1.3
+  resolution: "eslint-plugin-flowtype@npm:5.1.3"
   dependencies:
     lodash: ^4.17.15
+    string-natural-compare: ^3.0.1
   peerDependencies:
-    eslint: ">=6.1.0"
-  checksum: 3/2a1e799bcf92a620de1cc4fe143e1a10de4c1d18728a2082e8ca8632b238437d4119b6a395008aebf01dca563ffe9352acf1d8e483f68135f6ad055490fa26a9
+    eslint: ^7.1.0
+  checksum: 3/c07ebedb227eadddd743149877219dac711154a0620c5464073fc39f9243001c49e78edcb063ec7eea94040ecaa1908e9c4de7a7da695489964ad9d6b2401760
   languageName: node
   linkType: hard
 
@@ -5477,6 +5483,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-scope@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "eslint-scope@npm:5.1.0"
+  dependencies:
+    esrecurse: ^4.1.0
+    estraverse: ^4.1.1
+  checksum: 3/4a0e97979a855d09c4bb3a3f4f945cefaf8f6638a6a8f49472cefb0cf64982ab7ed1683a1e63d20ce1bcb01f94c133dc7a5bdf03b28eb945999f50f08878a2b4
+  languageName: node
+  linkType: hard
+
 "eslint-utils@npm:^1.4.3":
   version: 1.4.3
   resolution: "eslint-utils@npm:1.4.3"
@@ -5499,6 +5515,13 @@ __metadata:
   version: 1.1.0
   resolution: "eslint-visitor-keys@npm:1.1.0"
   checksum: 3/4bcd3d91e6b15ea771a0eb4a56631b384ce649145f43d23e865a695b07e197c276019098823d744d454d4e5e406a6eb7995c26310ee5d6ed3fe8d189f944440c
+  languageName: node
+  linkType: hard
+
+"eslint-visitor-keys@npm:^1.2.0":
+  version: 1.3.0
+  resolution: "eslint-visitor-keys@npm:1.3.0"
+  checksum: 3/58ab7a0107621d8a0fe19142a5e1306fd527c0f36b65d5c79033639e80278d8060264804f42c56f68e5541c4cc83d9175f9143083774cec8222f6cd5a695306e
   languageName: node
   linkType: hard
 
@@ -5549,9 +5572,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "eslint@npm:7.1.0"
+"eslint@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "eslint@npm:7.3.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
     ajv: ^6.10.0
@@ -5559,10 +5582,11 @@ __metadata:
     cross-spawn: ^7.0.2
     debug: ^4.0.1
     doctrine: ^3.0.0
-    eslint-scope: ^5.0.0
+    enquirer: ^2.3.5
+    eslint-scope: ^5.1.0
     eslint-utils: ^2.0.0
-    eslint-visitor-keys: ^1.1.0
-    espree: ^7.0.0
+    eslint-visitor-keys: ^1.2.0
+    espree: ^7.1.0
     esquery: ^1.2.0
     esutils: ^2.0.2
     file-entry-cache: ^5.0.1
@@ -5572,7 +5596,6 @@ __metadata:
     ignore: ^4.0.6
     import-fresh: ^3.0.0
     imurmurhash: ^0.1.4
-    inquirer: ^7.0.0
     is-glob: ^4.0.0
     js-yaml: ^3.13.1
     json-stable-stringify-without-jsonify: ^1.0.1
@@ -5591,7 +5614,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 3/26b8bc7947b9b8c42f05965a24cd9ea261f0d7b2b5993135bdac403bc65df7812338a2a0999810cae865ff877ec0e17eb818534179d765b7ed36a3a90c3a69b3
+  checksum: 3/a9551aaa81bc22dc948f058da82d2698119b12c767f2bfa1f992126f3bbf4c8cfc03aec5614e57727f8520bda10ddb868fb83b07a4fb30fee0a25b319cd3fde0
   languageName: node
   linkType: hard
 
@@ -5606,14 +5629,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "espree@npm:7.0.0"
+"espree@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "espree@npm:7.1.0"
   dependencies:
-    acorn: ^7.1.1
+    acorn: ^7.2.0
     acorn-jsx: ^5.2.0
-    eslint-visitor-keys: ^1.1.0
-  checksum: 3/6ba44ad87de76ea705f81ab82d8e89aa061ff1f2ef26374e1f3430b12f128d8d9b13ecc7f9be3d02d03966d82e74b2a2f0579bbef59d5b51e0cf8f329a563ef6
+    eslint-visitor-keys: ^1.2.0
+  checksum: 3/447e2663f82c7804d4d215bea01f54c2b21dcec247ce642d05f05a5e4639a4d91b51cf329ae5a3e154a59fa4b02782b0ff100c09a10bda70fe12fe36e1d658ea
   languageName: node
   linkType: hard
 
@@ -6078,7 +6101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-cache-dir@npm:^3.2.0":
+"find-cache-dir@npm:^3.2.0, find-cache-dir@npm:^3.3.1":
   version: 3.3.1
   resolution: "find-cache-dir@npm:3.3.1"
   dependencies:
@@ -6152,12 +6175,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-bin@npm:^0.118.0":
-  version: 0.118.0
-  resolution: "flow-bin@npm:0.118.0"
+"flow-bin@npm:^0.127.0":
+  version: 0.127.0
+  resolution: "flow-bin@npm:0.127.0"
   bin:
     flow: cli.js
-  checksum: 3/857acce5421b9d2163718fe5e96bb7cb7eb423e4bf8193207a28b08b2a77ea7f981546d71f5b474cefa82cef64a6fa3f1df5ca7ba008e7cc83bd89d50128b4c6
+  checksum: 3/6142f89df0ecdb7a81e9856039acd5088c0397a074c637b4cb7decb5b6425581a0cf556c32a8a78c137eae6f4f51ad66c31ec62cfb458aa667cffacaa3beb4a6
   languageName: node
   linkType: hard
 
@@ -6486,20 +6509,21 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"gh-pages@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "gh-pages@npm:2.2.0"
+"gh-pages@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "gh-pages@npm:3.1.0"
   dependencies:
     async: ^2.6.1
     commander: ^2.18.0
     email-addresses: ^3.0.1
     filenamify-url: ^1.0.0
+    find-cache-dir: ^3.3.1
     fs-extra: ^8.1.0
     globby: ^6.1.0
   bin:
     gh-pages: bin/gh-pages.js
     gh-pages-clean: bin/gh-pages-clean.js
-  checksum: 3/4aec588e014b9088e7ef999d41eb591436aa92293ebacef933afc9a162c77a8dd217bc054ea27686875831c929fbe1386efcdc2635651066420e013511506e6f
+  checksum: 3/cd329b21f2881ea608ec7934c2aabd954d093c72385f8cc235c18737fa52d6c6a29697b138aaafbad28c2657493d0d41e72c3fd04dad3b3ad2513c3202fa191a
   languageName: node
   linkType: hard
 
@@ -6649,22 +6673,22 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "hacktj-2020@workspace:."
   dependencies:
-    chart.js: ^2.9.3
-    eslint: ^7.1.0
-    eslint-plugin-flowtype: ^4.7.0
-    flow-bin: ^0.118.0
-    gh-pages: ^2.2.0
+    chart.js: ^3.0.0-alpha
+    eslint: ^7.3.0
+    eslint-plugin-flowtype: ^5.1.3
+    flow-bin: ^0.127.0
+    gh-pages: ^3.1.0
     lodash: ^4.17.15
-    mapbox-gl: ^1.10.1
+    mapbox-gl: ^1.11.0
     react: ^16.13.1
     react-bootstrap: ^1.0.1
     react-chartjs-2: ^2.9.0
     react-dom: ^16.13.1
-    react-map-gl: ^5.2.5
+    react-map-gl: ^5.2.7
     react-router-dom: ^5.2.0
     react-scripts: ^3.4.1
     react-smooth-collapse: ^2.1.0
-    react-tooltip: ^4.2.6
+    react-tooltip: ^4.2.7
   languageName: unknown
   linkType: soft
 
@@ -8946,7 +8970,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"mapbox-gl@npm:1.10.1, mapbox-gl@npm:^1.0.0, mapbox-gl@npm:^1.10.1":
+"mapbox-gl@npm:1.10.1, mapbox-gl@npm:^1.0.0":
   version: 1.10.1
   resolution: "mapbox-gl@npm:1.10.1"
   dependencies:
@@ -8974,6 +8998,37 @@ fsevents@~2.1.2:
     tinyqueue: ^2.0.3
     vt-pbf: ^3.1.1
   checksum: 3/2f3c22d0728a79c026fb48138bbcc1a18a6f850c639d933b60513addcc6a133c1de891ccf97c485ade307afc0ed5d82a5e80c4d5f23138a8bf84398a9897ea3f
+  languageName: node
+  linkType: hard
+
+"mapbox-gl@npm:1.11.0, mapbox-gl@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "mapbox-gl@npm:1.11.0"
+  dependencies:
+    "@mapbox/geojson-rewind": ^0.5.0
+    "@mapbox/geojson-types": ^1.0.2
+    "@mapbox/jsonlint-lines-primitives": ^2.0.2
+    "@mapbox/mapbox-gl-supported": ^1.5.0
+    "@mapbox/point-geometry": ^0.1.0
+    "@mapbox/tiny-sdf": ^1.1.1
+    "@mapbox/unitbezier": ^0.0.0
+    "@mapbox/vector-tile": ^1.3.1
+    "@mapbox/whoots-js": ^3.1.0
+    csscolorparser: ~1.0.3
+    earcut: ^2.2.2
+    geojson-vt: ^3.2.1
+    gl-matrix: ^3.2.1
+    grid-index: ^1.1.0
+    minimist: ^1.2.5
+    murmurhash-js: ^1.0.0
+    pbf: ^3.2.1
+    potpack: ^1.0.1
+    quickselect: ^2.0.0
+    rw: ^1.3.3
+    supercluster: ^7.1.0
+    tinyqueue: ^2.0.3
+    vt-pbf: ^3.1.1
+  checksum: 3/1db5e71a147a7b550a8d0bf282cadd501e9161149d8df23c5eaa839f98603b1856180da0d43e9054634ef9451eefe0d60d583da55b3084b12c9e50bbc15714c3
   languageName: node
   linkType: hard
 
@@ -9328,13 +9383,6 @@ fsevents@~2.1.2:
   bin:
     mkdirp: bin/cmd.js
   checksum: 3/9dd9792e891927b14ca02226dbe1daeb717b9517a001620d5e2658bbc72c5e4f06887b6cbcbb60595fa5a56e701073cf250f1ed69c1988a6b89faf9fd6a4d049
-  languageName: node
-  linkType: hard
-
-"moment@npm:^2.10.2":
-  version: 2.25.3
-  resolution: "moment@npm:2.25.3"
-  checksum: 3/416971ff3c663c850d56095cbfb01a2c153ecc7f3511772c1ff7e09a7be0105e135e8227aba0b82dd058efa8747271906cebe3f75cf4a1c4b17ed1b568003103
   languageName: node
   linkType: hard
 
@@ -11775,9 +11823,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:^5.2.5":
-  version: 5.2.5
-  resolution: "react-map-gl@npm:5.2.5"
+"react-map-gl@npm:^5.2.7":
+  version: 5.2.7
+  resolution: "react-map-gl@npm:5.2.7"
   dependencies:
     "@babel/runtime": ^7.0.0
     mapbox-gl: ^1.0.0
@@ -11787,7 +11835,7 @@ fsevents@~2.1.2:
     viewport-mercator-project: ^6.2.3 || ^7.0.1
   peerDependencies:
     react: ">=16.3.0"
-  checksum: 3/f10083961e33da8a291a027c56cfc7590b8433146303c907358455a9cec2f5953b32d0746b3d9301c50846a1253027d64ab22149a819ac2d441db3fa84f6f73c
+  checksum: 3/28d21fc0b3a51f688db60048c618577919bae0d98c0771753df1b31c0b4a2a86100be349384eb219192681c4a9e1eb3064c6d656c908ee32d6debe7c0add384d
   languageName: node
   linkType: hard
 
@@ -11930,16 +11978,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-tooltip@npm:^4.2.6":
-  version: 4.2.6
-  resolution: "react-tooltip@npm:4.2.6"
+"react-tooltip@npm:^4.2.7":
+  version: 4.2.7
+  resolution: "react-tooltip@npm:4.2.7"
   dependencies:
     prop-types: ^15.7.2
     uuid: ^7.0.3
   peerDependencies:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 3/097ef5c47e0e4b36f8c46b38823f19dfdbd8318ff176ba5d052a78e5e3db752062519bc96855600ccd8846644ab24db1125ec542c23a7e50dab296e17d006ee3
+  checksum: 3/33131479fdaacc149d2be2864d321d67e0a0f60537b9ce5e49f52b49251cdc47f7731c0a284db317d77fe55ab7d2109220f168b693c05ab2de3e9ed59758c457
   languageName: node
   linkType: hard
 
@@ -13320,6 +13368,13 @@ resolve@1.15.0:
   languageName: node
   linkType: hard
 
+"string-natural-compare@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "string-natural-compare@npm:3.0.1"
+  checksum: 3/c81b8adc4b91692e01eeb609d85c8fceeba14a41997e65fdc2e01fa9b0a9566663f6326a40436282eaa477ee6997c9096139a995c8220ffca79547c57e1a84e6
+  languageName: node
+  linkType: hard
+
 "string-width@npm:^1.0.1":
   version: 1.0.2
   resolution: "string-width@npm:1.0.2"
@@ -13558,6 +13613,15 @@ resolve@1.15.0:
   dependencies:
     kdbush: ^3.0.0
   checksum: 3/21bc9ece478d390ddb68f110fe2deb941ec8f30be6195a853b0984aed8846ad2762999663eff65d673b5711643b8e36d0f44a9cbc9001a3b4a54e5e4f4bfd97b
+  languageName: node
+  linkType: hard
+
+"supercluster@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "supercluster@npm:7.1.0"
+  dependencies:
+    kdbush: ^3.0.0
+  checksum: 3/82ee4a0a35c278faf5095d82e2c16503ec1c08b9a7799e040c00c9993763630bd58e0d52ba483bbd23c0780e3dc49ca0600ca1c56c779e4c8320cc256a60cf2b
   languageName: node
   linkType: hard
 
